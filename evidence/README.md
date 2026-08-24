@@ -1,6 +1,7 @@
 # Bằng chứng Lab Day 22 - LangSmith + Prompt Versioning
 
 Sinh viên: Nguyễn Anh Đức - MSSV 2A202601930
+LangSmith project: https://smith.langchain.com/o/8c9e81ff-95e6-4866-927f-e7e6680c65f2/projects/p/127245aa-0056-4a12-98fb-1282e0cc1bad
 
 ## Cấu hình hệ thống
 
