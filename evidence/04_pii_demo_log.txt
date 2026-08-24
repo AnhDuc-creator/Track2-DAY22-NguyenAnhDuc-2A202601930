@@ -1,0 +1,35 @@
+======================================================================
+  DEMO 1: PII Detector
+======================================================================
+
+[Test 1] Dau vao sach, khong co PII
+  Input : Machine learning models learn patterns from training data.
+  Output: Machine learning models learn patterns from training data.
+  Trang thai: SACH - giu nguyen
+
+[Test 2] Email
+  Input : Please contact our support team at support@example.com for help.
+  Output: Please contact our support team at [EMAIL_REDACTED] for help.
+  Trang thai: DA CHE PII
+
+[Test 3] So dien thoai
+  Input : Call me back at 555-123-4567 tomorrow morning.
+  Output: Call me back at [PHONE_REDACTED] tomorrow morning.
+  Trang thai: DA CHE PII
+
+[Test 4] SSN
+  Input : The customer SSN is 123-45-6789 in our records.
+  Output: The customer SSN is [SSN_REDACTED] in our records.
+  Trang thai: DA CHE PII
+
+[Test 5] The tin dung
+  Input : Charge the card 4532 1234 5678 9010 for this order.
+  Output: Charge the card [CREDIT_CARD_REDACTED] for this order.
+  Trang thai: DA CHE PII
+
+[Test 6] Nhieu loai PII cung luc
+  Input : Reach John at john.doe@corp.com or 555-987-6543, SSN 987-65-4321.
+  Output: Reach John at [EMAIL_REDACTED] or [PHONE_REDACTED], SSN [SSN_REDACTED].
+  Trang thai: DA CHE PII
+
+Tong cong 6 test case.

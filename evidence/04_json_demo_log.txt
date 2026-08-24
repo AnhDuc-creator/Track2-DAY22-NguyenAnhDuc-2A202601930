@@ -1,0 +1,50 @@
+======================================================================
+  DEMO 2: JSON Formatter
+======================================================================
+
+[Test 1] JSON hop le
+  Input : '{"name": "Alice", "age": 30}'
+  Output: {"name": "Alice", "age": 30}
+  Trang thai: HOP LE - giu nguyen | parse duoc: True
+
+[Test 2] Bi boc trong markdown fences
+  Input : '```json\n{"city": "Hanoi", "country": "Vietnam"}\n```'
+  Output: {
+  "city": "Hanoi",
+  "country": "Vietnam"
+}
+  Trang thai: DA TU SUA | parse duoc: True
+
+[Test 3] Dung nhay don
+  Input : "{'model': 'gpt-oss-20b', 'provider': 'groq'}"
+  Output: {
+  "model": "gpt-oss-20b",
+  "provider": "groq"
+}
+  Trang thai: DA TU SUA | parse duoc: True
+
+[Test 4] Co dau phay thua
+  Input : '{"a": 1, "b": 2,}'
+  Output: {
+  "a": 1,
+  "b": 2
+}
+  Trang thai: DA TU SUA | parse duoc: True
+
+[Test 5] Ket hop fences + nhay don + phay thua
+  Input : "```json\n{'x': 1, 'y': 2,}\n```"
+  Output: {
+  "x": 1,
+  "y": 2
+}
+  Trang thai: DA TU SUA | parse duoc: True
+
+[Test 6] Hoan toan sai dinh dang
+  Input : 'This is definitely not JSON at all {]'
+  Output: {
+  "error": "invalid_json",
+  "message": "Khong the sua chuoi thanh JSON hop le"
+}
+  Trang thai: KHONG SUA DUOC - tra ve JSON du phong | parse duoc: True
+
+Tong cong 6 test case.
